@@ -1,0 +1,408 @@
+/*  Font fråm Google Font --- font-family: 'Roboto'*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
+
+body {
+  min-height: 100vh;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  padding: 0;
+  margin: 0;
+}
+
+.root-container {
+  display: flex;
+  min-height: calc(100vh - 150px);
+}
+
+header {
+  height: 150px;
+  background-color: rgb(153, 184, 197);
+  display: flex;
+}
+
+.sidebar {
+  min-width: 220px;
+  display: flex;
+}
+
+.main-container {
+  flex-grow: 1;
+  background-color: lightgrey;
+}
+
+.text-container {
+  font-weight: 300;
+  font-size: 30px;
+  margin: auto;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 1rem;
+}
+
+/* Common class */
+.bg-drak {
+  background: #333;
+  color: white;
+}
+
+.bg-light {
+  background: #f4f4f4;
+  color: #000;
+}
+
+
+/* Navbar */
+.menu {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+  font-size: 20px;
+  align-items: center;
+  list-style: none;
+}
+
+.menu a {
+  color: rgb(117, 230, 11);
+  padding: 0.75rem;
+  padding: 1 1rem;
+  text-decoration: none;
+}
+
+
+.menu a:hover {
+  background-color: #004B87;
+  color: #fff;
+  border-radius: 9px;
+}
+
+.menu a.active {
+  background-color: rgb(18, 106, 136);
+  color: #fff;
+  border-radius: 9px;
+}
+
+/* End Navbar */
+
+.footer-p {
+  text-align: center;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  height: 100px;
+  display: flex;
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/*-----------------------------------
+============Mobile Screen============ 
+-----------------------------------*/
+@media only screen and (max-width: 900px) {
+  .root-container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    height: 120px;
+  }
+
+  .menu {
+    flex-direction: row;
+  }
+
+  .main-container {
+    flex-direction: column;
+  }
+
+  .contact-container {
+
+    flex-direction: column;
+  }
+
+  .info--container {
+    flex-direction: column;
+  }
+
+  .my-maps {
+    flex-direction: column;
+  }
+
+  .my-media {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .index-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .my-table {
+    width: auto;
+    max-width: 330px;
+    height: 100%;
+    font-size: 15px;
+  }
+
+  .img-container {
+    flex-direction: column;
+  }
+
+  .img-container img {
+    width: 330px;
+    height: 100%;
+  }
+  .img-footer img{
+    max-width: 330px;
+    width: 300px;
+    height: 200px;
+  }
+
+}
+
+/*-----------------------------------
+==========End Mobile Screen========== 
+------------------------------------*/
+
+.info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 10px;
+  text-decoration: none;
+
+}
+
+.my-info {
+  font-size: 20px;
+  font-weight: 700;
+  list-style: none;
+  margin-bottom: 100px;
+
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around
+}
+
+
+/*-----Google Maps-----*/
+iframe {
+  filter: invert(100%);
+}
+
+.social-media {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  font-size: 2em;
+  list-style: none;
+  text-decoration: none;
+}
+
+/*-----Social-media-----*/
+svg {
+  display: block;
+  fill: #04AA6D;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+}
+
+svg:hover {
+  fill: #107490;
+}
+
+
+.icon {
+  font-size: 30px;
+  text-decoration: none;
+
+}
+
+.icon a {
+  display: flex;
+  align-items: center;
+  color: #04AA6D;
+  text-decoration: none;
+  flex-direction: row;
+}
+
+.icon:hover a {
+  color: #107490;
+  background-color: whitesmoke;
+}
+
+
+
+
+.Touch {
+  width: 200px;
+}
+
+
+.mymaps {
+  max-width: 700px;
+  width: 100%;
+  height: 550px;
+  margin: 20px;
+}
+
+.googlemap {
+  width: 100%;
+
+}
+
+.my-media {
+  max-width: 700px;
+  width: 100%;
+  height: 550px;
+}
+
+
+
+
+/* --------------- */
+.index-container {
+  margin: 10px;
+  font-size: 20px;
+}
+
+/* float text */
+.index-content {
+  float: left;
+  padding: 0px 20px 15px 0px;
+}
+
+.image-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  border: 5px solid gray;
+  background-color: #004B87;
+  width: 240px;
+  color: white;
+}
+
+.my-foto {
+  display: block;
+  width: 200px;
+  border: 2px solid gray;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+.content-box {
+  text-align: justify;
+  padding: 10px;
+}
+
+/* ------------ */
+.table-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.my-table {
+  width: 500px;
+  height: 100%;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 5px;
+  margin: 5px;
+  background-color: white;
+  line-height: 1.5em;
+}
+
+table.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.list-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 50px;
+}
+
+.list-container li {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.list-container samp {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+/* ========================= */
+#headerimage {
+  background: url(images/Mountain.jpg) no-repeat center center/cover;
+}
+
+.headerimage-overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.445);
+}
+
+/* =========Demo======= */
+.img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+}
+
+.img-container img {
+  width: 300px;
+  height: 200px;
+}
+.img-footer img{
+  width: 600px;
+  height: 200px;
+}
+
+.myp {
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+}
